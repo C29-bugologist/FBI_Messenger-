@@ -13,17 +13,17 @@ while True:
         if Encode_Decode == 1:
             To_Encrypt = input("Enter The Message You want to Encrypt:\n")
             Encoded = base64.b64encode(To_Encrypt.encode('utf-8'))
-            print("Here is your encrypted message:", Encoded)
+            print("Here is your encrypted message:", Encoded,"\n")
         elif Encode_Decode == 2:
             To_Decode = input("Enter The Message You want to Decode:\n")
             Decoded = base64.b64decode(To_Decode).decode('utf-8')
-            print("Here is your decrypted message:", Decoded)
+            print("Here is your decrypted message:", Decoded,"\n")
         elif Encode_Decode == 3:
             print("goodbye")
             break
         else:
             print(Encode_Decode, "is Invalid enter 1 or 2" )
     else:
-        print("YOU ARE INCORRECT")
+        print("      YOU ARE INCORRECT")
         break
 
